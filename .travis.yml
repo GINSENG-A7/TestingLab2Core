@@ -4,7 +4,7 @@ mono:
   - latest
 sudo: required
 dist: xenial
-dotnet: 4.8.0
+#dotnet: 4.8.0
 os:
   - linux
   #- dotnet test test/NosCore.Tests/NosCore.Tests.csproj
