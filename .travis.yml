@@ -1,0 +1,18 @@
+language: csharp
+solution: TestingLab2.sln
+mono:
+  - latest
+sudo: required
+dist: xenial
+dotnet: 4.8.0
+os:
+  - linux
+  #- dotnet test test/NosCore.Tests/NosCore.Tests.csproj
+install:
+  - nuget restore TestingLab2.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - dotnet restore
+  - dotnet build
+  - msbuild /p:Configuration=Release TestingLab2.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TestingLab2.Tests/bin/Release/TestingLab2.Tests.dll
