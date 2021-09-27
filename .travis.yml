@@ -16,6 +16,11 @@ script:
   - dotnet build
   - msbuild /p:Configuration=Release TestingLab2Core.sln
   - cd ..
+  - ls -l
+  - cd ..
+  - ls -l
+  - cd ..
+  - ls -l
   - cd ..
   - ls -l
   - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TestingLab2Core/bin/Release/TestingLab2Core.dll
