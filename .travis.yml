@@ -18,5 +18,5 @@ script:
   - pwd
   - cd /home/travis/build/GINSENG-A7/TestingLab2Core
   - ls -l
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TestingLab2Core/bin/Release/TestingLab2Core.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe /home/travis/build/GINSENG-A7/TestingLab2Core/TestingLab2Core.dll
   #./TestingLab2Core.Tests/bin/Release/TestingLab2Core.Tests.cs 
