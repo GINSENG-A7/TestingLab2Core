@@ -16,7 +16,7 @@ script:
   - dotnet build
   - msbuild /p:Configuration=Release TestingLab2Core.sln
   - pwd
-  - cd /home/travis/build/GINSENG-A7/TestingLab2Core
+  - cd /home/travis/build/GINSENG-A7/TestingLab2Core/bin
   - ls -l
   - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe /home/travis/build/GINSENG-A7/TestingLab2Core/TestingLab2Core.dll
   #./TestingLab2Core.Tests/bin/Release/TestingLab2Core.Tests.cs 
