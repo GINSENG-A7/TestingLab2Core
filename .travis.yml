@@ -15,5 +15,5 @@ script:
   - dotnet restore
   - dotnet build
   - msbuild /p:Configuration=Release TestingLab2Core.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TestingLab2Core\bin\Release\.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TestingLab2Core/bin/Release/TestingLab2Core.dll
   #./TestingLab2Core.Tests/bin/Release/TestingLab2Core.Tests.cs 
