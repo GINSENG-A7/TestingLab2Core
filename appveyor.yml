@@ -14,5 +14,5 @@ build:
   project: TestingLab2Core.sln
 before_build:
   - nuget restore
-dotnet_test:
+test_script:
    - ps: dotnet test "C:\projects\snapper\TestingLab2Core\TestingLab2Core.csproj" --no-build --logger:Appveyor
