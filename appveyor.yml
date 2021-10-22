@@ -15,4 +15,4 @@ build:
 before_build:
   - nuget restore
 test_script:
-   - ps: dotnet test "C:\projects\TestingLab2Core\TestingLab2Core.csproj" --no-build --logger:Appveyor
+   - ps: dotnet test "TestingLab2Core.csproj" --no-build --logger:Appveyor
